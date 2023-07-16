@@ -52,7 +52,7 @@ Addtionally, `Binwalk`/ `Hexeditor`(For instance, `HxD` is a great freeware to u
     - [Magiceye(Autostereogram) Alternative Solver](https://magiceye.ecksdee.co.uk/)
         - ![](https://hackmd.io/_uploads/Sy3rPr_th.png)
 * JPG steghide used Magiceye (Stereogram) to hide flag.
- * **Final FLAG : ||SCIST{YoU_4r3_K1N6_oF_T31eP47HY_XD}||**
+ * **Final FLAG : SCIST{YoU_4r3_K1N6_oF_T31eP47HY_XD}**
 ![](https://hackmd.io/_uploads/rym75PZFh.png)
 ---
 
@@ -192,7 +192,7 @@ It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
 also quicker to see the `key` in the last packet.
 
     > ![](https://hackmd.io/_uploads/rk-Mw5FYn.png)
- * **Final FLAG : ||SCIST{pc4p_4n4lyS15_1snT_h4rd_W17H_Bl4CK_LUXURY_C4R}||**
+ * **Final FLAG : SCIST{pc4p_4n4lyS15_1snT_h4rd_W17H_Bl4CK_LUXURY_C4R}**
 ---
 
 ## Entry Forensics
@@ -432,5 +432,5 @@ easily can understand who is `zal0`, `phy114ck3r` and `CEO`, respectively.
 ![](https://hackmd.io/_uploads/S10sg_Z5n.png)
 - ![](https://hackmd.io/_uploads/BkgGCPW9h.png)
  > [name=112f3a99b283a4e1788dedd8e0e5d35375c33747.png]
-* **Final FLAG : ||SCIST{Vol4T1L17Y_C4N_do_4LL_Non53nse_M3MFoR3Ns1cs}||**
+* **Final FLAG : SCIST{Vol4T1L17Y_C4N_do_4LL_Non53nse_M3MFoR3Ns1cs}**
 
