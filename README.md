@@ -1,7 +1,6 @@
-## [HackMD Misc Official Writeup by sixkwnp](https://hackmd.io/@sixkwnp/ryxZqDZK3)
-
+> [HackMD Misc Official Writeup by sixkwnp](https://hackmd.io/@sixkwnp/ryxZqDZK3)
 ## Walkthrough >> [SCIST S3 Final CTF Platform](https://final.ctf.scist.org/)
-~~```不要使用假帳看 Hint 啦，不然我要怎樣釋出更多的提示QQ```~~
+> ~~```不要使用假帳看 Hint 啦，不然我要怎樣釋出更多的提示QQ```~~
 
 ## Deepeye
 `Format stego`,`Image stego` 
