@@ -10,7 +10,7 @@
 > [name=Author: sixkwnp]
 > [time=Fri, Jul 7, 2023 4:08 PM]
 
-Hint1: ||網路有現成工具可解題，請仔細聽  .wav 音頻，裡面有非常明顯的提示；並且，題目共須解開三層關卡。||
+Hint1: 網路有現成工具可解題，請仔細聽  .wav 音頻，裡面有非常明顯的提示；並且，題目共須解開三層關卡。
 
 ---
 ### Solution
@@ -64,7 +64,7 @@ Addtionally, `Binwalk`/ `Hexeditor`(For instance, `HxD` is a great freeware to u
 > FLAG Format: `SCIST{.*}`
 > [name=Author: sixkwnp]
 > [time=Fri, Jul 7, 2023 4:08 PM]
-Hint: ||Pcap 檔包含文字對話與混淆的亂碼，請活用 Wireshark  Filter 以過濾封包，或者使用各式內建功能找到關鍵訊息；另外，要取得必需的 key 時，請觀察特定 Packet 會話收送之 IP 變化，本題目總共存在三層關卡。||
+Hint: |cap 檔包含文字對話與混淆的亂碼，請活用 Wireshark  Filter 以過濾封包，或者使用各式內建功能找到關鍵訊息；另外，要取得必需的 key 時，請觀察特定 Packet 會話收送之 IP 變化，本題目總共存在三層關卡。
 ---
 ### Info
 By using the various built-in function in the `Wireshark` or `Tshark`, we can easily identify which kinds of datas are what we want. 
@@ -206,9 +206,9 @@ also quicker to see the `key` in the last packet.
 > [name=Author: sixkwnp]
 > [time=Fri, Jul 7, 2023 4:08 PM]
 
-> Hint1: ||用工具或指令對 .mem dump 出 FLAG 資料夾的位置||
+> Hint1: 用工具或指令對 .mem dump 出 FLAG 資料夾的位置
 
-> Hint2: || FLAG 為 .png 檔案||
+> Hint2: FLAG 為 .png 檔案
 
 ---
 ### Solution (Many ways / hints)
