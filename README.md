@@ -1,4 +1,4 @@
-[![hackmd-github-sync-badge](https://hackmd.io/f58_quqGT36T_g_fUIKPGw/badge)](https://hackmd.io/f58_quqGT36T_g_fUIKPGw)
+[[hackmd-github-sync-badge](https://hackmd.io/f58_quqGT36T_g_fUIKPGw/badge)](https://hackmd.io/f58_quqGT36T_g_fUIKPGw)
 
 ## Walkthrough >> [SCIST S3 Final CTF Platform](https://final.ctf.scist.org/)
 ~~```不要使用假帳看 Hint 啦，不然我要怎樣釋出更多的提示QQ```~~
