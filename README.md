@@ -7,18 +7,19 @@
 > I am not the script kiddle... But I'll be the master of psychic!
 > 
 > FLAG Format: `SCIST{.*}`
-> [name=Author: sixkwnp]
-> [time=Fri, Jul 7, 2023 4:08 PM]
+> > - Author: sixkwnp
+> > - Fri, Jul 7, 2023 4:08 PM
 
 Hint1: 網路有現成工具可解題，請仔細聽  .wav 音頻，裡面有非常明顯的提示；並且，題目共須解開三層關卡。
 
 ---
 ### Solution
 In the `Deep.wav`file, It had mentioned three computer tools or tricks repeatedly. Two of them, `Deepsound` and `Magiceye` (one way to steghide the image(Stereogram)), are the tools we need to solve this challenge.
-> ex: 
+> ex:
+> 
 > ![](https://hackmd.io/_uploads/ByaazWPYn.png)
 1. Deepsound (.wav steghide a **PDF file**) ->
-2. Password is ||`SCIST`|| which is everywhere in the first line of .wav sound. 
+2. Password is `SCIST` which is everywhere in the first line of .wav sound. 
 Then we send `Deep.wav` to Deepsound and get a PDF file. ->
 >![](https://hackmd.io/_uploads/H1Jy_evY3.png)
 >
@@ -35,16 +36,20 @@ If it isn't broken, we have to find ways to open it. (There're also PDF repair c
 ```
 6. So we have 70% confidence that it's a `fake .pdf file`, it should be a `.zip` file. 
 Addtionally, `Binwalk`/ `Hexeditor`(For instance, `HxD` is a great freeware to utilize and solve) can also find the real Filename Extension or something steghiden & compressed inside.
-> `binwalk`ex: 
+> `binwalk`ex:
+> 
 > ![](https://hackmd.io/_uploads/SyiHw4_Yn.png)
+> 
 > (p.s: there's a possibility that we should change header to `25 50 44 46 2D` (.pdf header) and tail of the file, but this challenge kinda few 'cause it's somewhat uncertain & need to guess)
 7.  Got `Final_H4ck3R.jpg` image and a file called `Second`.
 > ![](https://hackmd.io/_uploads/SJISmHOth.png)
 > 
 > In`Second`file:
+> 
 > ![](https://hackmd.io/_uploads/B1ObESuK2.png)
 > 
 > `Final_H4ck3R.jpg`:
+> 
 > ![](https://hackmd.io/_uploads/B17GHSdt3.png) 
 8. In the audio of `Deep.wav` (mentioned `Magiceye`) and `Second` (mentioned `Magic!`) hint twice about `Magiceye` this trick.
 9. There're online solver related to `Stereogram` or `Magiceye` already (Automatically detect the format). example:
@@ -59,12 +64,16 @@ Addtionally, `Binwalk`/ `Hexeditor`(For instance, `HxD` is a great freeware to u
 ## Manatsunoyoru no Attack
 `Forensics`,`Pcap analysis`
 > 屈原既放，遊於江潭，行吟澤畔，顏色憔悴，形容枯槁。見一鯊，欲用線逮之，疑是身心俱疲，有黑色高級車，不幸追之。其一曰三浦，庇年幼者，俱攬其責。高級車主，暴力團員谷岡也，見此提要求數條，乃為……
+> 
 > ![](https://hackmd.io/_uploads/H1v0_BrFn.png)
 > 
 > FLAG Format: `SCIST{.*}`
-> [name=Author: sixkwnp]
-> [time=Fri, Jul 7, 2023 4:08 PM]
-Hint: |cap 檔包含文字對話與混淆的亂碼，請活用 Wireshark  Filter 以過濾封包，或者使用各式內建功能找到關鍵訊息；另外，要取得必需的 key 時，請觀察特定 Packet 會話收送之 IP 變化，本題目總共存在三層關卡。
+> 
+> > - Author: sixkwnp
+> > - Fri, Jul 7, 2023 4:08 PM
+
+Hint: pcap 檔包含文字對話與混淆的亂碼，請活用 Wireshark  Filter 以過濾封包，或者使用各式內建功能找到關鍵訊息；另外，要取得必需的 key 時，請觀察特定 Packet 會話收送之 IP 變化，本題目總共存在三層關卡。
+
 ---
 ### Info
 By using the various built-in function in the `Wireshark` or `Tshark`, we can easily identify which kinds of datas are what we want. 
@@ -109,7 +118,7 @@ There're many ways to solve my second challenge, I will choose two way to explai
     > ![](https://hackmd.io/_uploads/SkpPlttF2.png)
 
 2. If using `TCP` u might see some interesting things. 
-But firstly let us check packet under **FLAG????** and **SCIST{** :
+But firstly let us check packet under **FLAG????** and **SCIST{** 
 
     There's a hint:
     > ![](https://hackmd.io/_uploads/SJcs-YKFn.png)
@@ -155,21 +164,21 @@ It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
       -  ![](https://hackmd.io/_uploads/HyQNqtYFh.png)
 6. Exporting object
 
-    (1). Method one
+    (1) Method one
     > ![](https://hackmd.io/_uploads/rkOkCFtF3.png)
 
-    (2). Method two
+    (2) Method two
     > ![](https://hackmd.io/_uploads/BJOYAKKKn.png)
     > 
 
-    (3). Method three
+    (3) Method three
     > ![](https://hackmd.io/_uploads/SyL1WcFYn.png)
 
         Method(2) you will need to delete space like this http://www.esjson.com/delSpace.html  
 7. 
     > Remember to remove **packet header** many `00 00 00 00`**in the tail of second packet**.
+    > (after `45 4f 46 0a`)
 
-     (after `45 4f 46 0a`)
     ![](https://hackmd.io/_uploads/HJDlg9Kth.png)
 8. Hex to file (or use 010editor, Notepad++, HxD...):
     > ![](https://hackmd.io/_uploads/SJf5ZqFK3.png)
@@ -203,12 +212,12 @@ also quicker to see the `key` in the last packet.
 > 
 > Challenge Background: 最近一家跨國公司遭遇了一次嚴重的資料外洩，該公司的 IT 部門從受影響的電腦之一提取了一個 Disk image，他們懷疑其中包含了與外洩事件相關的重要證據；作為一名數位鑑識調查人員，您的任務是分析這個 Disk image，並找到以 FLAG `SCIST{a-z_A-Z_0-9}` 表示的關鍵信息，以協助調查工作。
 > 
-> [name=Author: sixkwnp]
-> [time=Fri, Jul 7, 2023 4:08 PM]
+> > - Author: sixkwnp
+> > - Fri, Jul 7, 2023 4:08 PM
 
-> Hint1: 用工具或指令對 .mem dump 出 FLAG 資料夾的位置
+ Hint1: 用工具或指令對 .mem dump 出 FLAG 資料夾的位置
 
-> Hint2: FLAG 為 .png 檔案
+ Hint2: FLAG 為 .png 檔案
 
 ---
 ### Solution (Many ways / hints)
@@ -236,7 +245,6 @@ You can think that the company tried to generate this disk image for DFIR, but t
     ```
     C:\Windows\SysWOW64\Recovery\Company\SCIST.fixed.mem
     ```
-> :::spoiler
 > Memory Forensics
 >
 > Introduction
@@ -266,28 +274,26 @@ You can think that the company tried to generate this disk image for DFIR, but t
 > - Retrieve screenshots and clipboard contents.
 > - Retrieve hashed passwords.
 > - Retrieve SSL keys and certificates.
-> :::
-> [name=SCIST.Entry.forensics.txt]
+> > - SCIST.Entry.forensics.txt
 
  **SCIST_address**:
 > ![](https://hackmd.io/_uploads/By4B34b52.png)
-[name=C:\Users\sixkwnp\Documents]
+> - C:\Users\sixkwnp\Documents
 ---
 **SCIST.Entry.forensics.txt**:
 > ![](https://hackmd.io/_uploads/HkfCSVbc2.png)
-> [name=C:\Users\sixkwnp\Documents]
+> > - C:\Users\sixkwnp\Documents
 
 > There's also a hint
 > ![](https://hackmd.io/_uploads/rkkY5NZ9n.png)
 >
-> [name=[root] -> C:\]
+> > - [root] -> C:\
 5. As you follow the hint, you should use your Mem Forensics skills/tools to solve **.MEM file** hidden challenge; but first, let us find hints / stories in Directory that mentioned in `Malicious_Image.ad1.txt`:
     ```
     - C:\Users\sixkwnp\Contacts
     - C:\Users\sixkwnp\Videos
     ```
 - First story that later will use in solving final challenge
-> :::spoiler
 > [17:35] <phy114c1<3r>: I have some news for you. I found a way to hack into the confidential computer of the company we are targeting.
 > [17:36] <phy114c1<3r>: it's not easy, but it's possible. You need to use a special software that I developed, and a code word that I will give you.
 > [17:37] <phy114c1<3r>: are you interested?
@@ -305,8 +311,7 @@ You can think that the company tried to generate this disk image for DFIR, but t
 > [17:46] <zal0>: don't worry, I won't. See you tomorrow, hacker buddy.
 > 
 > [17:47] <phy114c1<3r>: see you tomorrow.
-> :::
-> [name=confidential.cam]
+> > - confidential.cam
 
 > C:\Users\sixkwnp\Videos:
 > 
@@ -325,7 +330,6 @@ C:\Users\sixkwnp\Contacts
 > ![](https://hackmd.io/_uploads/rkTvWSWqh.png)
 ---
 - Second story that later will use in solving final challenge
-> :::spoiler
 > <Zoe> 2023-07-06 16:46:00
 > I'm ready. Today is my last day at this company. Are you sure you've inserted the malicious software into the highly confidential computer?
 > 
@@ -343,22 +347,19 @@ C:\Users\sixkwnp\Contacts
 > 
 > <Andrew> 2023-07-06 16:47:15
 > Goodbye, Zoe. I wish you all the best. We may never see each other again, but I'll always remember you.
-> :::
-> [name=Andrew\1.txt]
+> > - Andrew\1.txt
 
 > C:\Users\sixkwnp\Contacts\Andrew:
 > 
 > ![](https://hackmd.io/_uploads/rJ0emSZch.png)
 ---
 - **Hint third about .MEM challenge and some tools + challenges**
-> :::spoiler
 > Browsing History
 > https://en.wikipedia.org/wiki/Memory_forensics
 > 8.8.8.8
 > https://github.com/apsdehal/awesome-ctf
 > https://github.com/volatilityfoundation/volatility3
-> :::
-> [name=Zoe\1.txt && Zephyr\1.txt]
+> > - Zoe\1.txt && Zephyr\1.txt
 
 > C:\Users\sixkwnp\Contacts\Zoe || C:\Users\sixkwnp\Contacts\Zephyr:
 > 
@@ -408,29 +409,29 @@ C:\Users\sixkwnp\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\Console
 > Export this `Who is zal0 CASESENSITIVE.7z` file
 >
 > ![](https://hackmd.io/_uploads/rJREcDW92.png)
-[name=C:\Users\sixkwnp\Appdata\Local\Temp]
+> - C:\Users\sixkwnp\Appdata\Local\Temp
 ### 
 10. If you take a glance at two stories and `C:\Users\sixkwnp\Contacts`,
 easily can understand who is `zal0`, `phy114ck3r` and `CEO`, respectively.
 ---
 > ![](https://hackmd.io/_uploads/BJO-sDZq2.png)
-> - key: ||Zoe|| (Case sensitive)
+> - key: Zoe (Case sensitive)
 > 
-> [name=Who is zal0 CASESENSITIVE.7z]
+> > - Who is zal0 CASESENSITIVE.7z
 ---
 > ![](https://hackmd.io/_uploads/Bk-i2vbc3.png)
-> - key: ||Andrew|| (Case sensitive)
+> - key: Andrew (Case sensitive)
 > 
-> [name=Who is phy114ck3r.7z]
+> > - Who is phy114ck3r.7z
 ---
 > ![](https://hackmd.io/_uploads/SkVm6Pbq2.png)
-> - key: ||Mattias|| (Case sensitive)
+> - key: Mattias (Case sensitive)
 > 
-> [name=Who is CEO.7z]
+> > - Who is CEO.7z
 11. Successfully dump the flag!
     
 ![](https://hackmd.io/_uploads/S10sg_Z5n.png)
 - ![](https://hackmd.io/_uploads/BkgGCPW9h.png)
- > [name=112f3a99b283a4e1788dedd8e0e5d35375c33747.png]
+ > > - 112f3a99b283a4e1788dedd8e0e5d35375c33747.png
 * **Final FLAG : SCIST{Vol4T1L17Y_C4N_do_4LL_Non53nse_M3MFoR3Ns1cs}**
 
