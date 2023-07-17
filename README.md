@@ -1,25 +1,27 @@
 ## Contents:
-- [Challenge](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#walkthrough--scist-s3-final-ctf-platform)
+- [Challenge](#Challenge)
     - [HackMD Misc Official Writeup](https://hackmd.io/@sixkwnp/ryxZqDZK3)
-- [Deepeye - Misc 1](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#deepeye)
-    - [Solution](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#solution)
-- [Manatsunoyoru no Attack - Misc 2](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#manatsunoyoru-no-attack)
-    - [Info](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#info)
-    - [Wireshark 教學 - 封包分析實作 | 系統管理培訓](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#--wireshark-%E6%95%99%E5%AD%B8---%E5%B0%81%E5%8C%85%E5%88%86%E6%9E%90%E5%AF%A6%E4%BD%9C--%E7%B3%BB%E7%B5%B1%E7%AE%A1%E7%90%86%E5%9F%B9%E8%A8%93)
-    - [Solution](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#solution-1)
-- [Entry Forensics - Misc 3](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#entry-forensics%20)
-    - [Solution](https://github.com/Skwgasnaw/SCIST-S3-Final-CTF-Misc/edit/main/README.md#solution-2)
+- [Deepeye - Misc 1](#Deepeye)
+    - [Solution](#Solution1)
+- [Manatsunoyoru no Attack - Misc 2](#Manatsunoyoru)
+    - [Info](#Info)
+    - [Wireshark 教學 - 封包分析實作 | 系統管理培訓](https://youtu.be/Bhs173xh4fk)
+    - [Solution](#Solution2)
+- [Entry Forensics - Misc 3](#Entry)
+    - [Solution](#Solution3)
 
 ---
 
-## Walkthrough >> [SCIST S3 Final CTF Platform](https://final.ctf.scist.org/)
-> [HackMD Misc Official Writeup by sixkwnp](https://hackmd.io/@sixkwnp/ryxZqDZK3)
+<h2 id="Challenge">Walkthrough</h2> 
+
+### [SCIST S3 Final CTF Platform](https://final.ctf.scist.org/)
+- [HackMD Misc Official Writeup by sixkwnp](https://hackmd.io/@sixkwnp/ryxZqDZK3)
 > 
 > ~~```不要使用假帳看 Hint 啦，不然我要怎樣釋出更多的提示QQ```~~
 
 ---
 
-## Deepeye
+<h2 id="Deepeye">Deepeye</h2>
 `Format stego`,`Image stego` 
 > I am not the script kiddle... But I'll be the master of psychic!
 > 
@@ -32,7 +34,7 @@
 Hint1: 網路有現成工具可解題，請仔細聽  .wav 音頻，裡面有非常明顯的提示；並且，題目共須解開三層關卡。
 
 ---
-### Solution
+<h3 id="Solution1">Solution</h3> 
 In the `Deep.wav`file, It had mentioned three computer tools or tricks repeatedly. Two of them, `Deepsound` and `Magiceye` (one way to steghide the image(Stereogram)), are the tools we need to solve for this challenge.
 > ex:
 > 
@@ -94,7 +96,7 @@ Addtionally, `Binwalk`/ `Hexeditor` can also find the real Filename Extension or
 
 ---
 
-## Manatsunoyoru no Attack
+<h2 id="Manatsunoyoru">Manatsunoyoru no Attack</h2> 
 `Forensics`,`Pcap analysis`
 > 屈原既放，遊於江潭，行吟澤畔，顏色憔悴，形容枯槁。見一鯊，欲用線逮之，疑是身心俱疲，有黑色高級車，不幸追之。其一曰三浦，庇年幼者，俱攬其責。高級車主，暴力團員谷岡也，見此提要求數條，乃為……
 > 
@@ -110,7 +112,7 @@ Addtionally, `Binwalk`/ `Hexeditor` can also find the real Filename Extension or
 Hint: Pcap 檔包含文字對話與混淆的亂碼，請活用 Wireshark  Filter 以過濾封包，或者使用各式內建功能找到關鍵訊息；另外，要取得必需的 key 時，請觀察特定 Packet 會話收送之 IP 變化，本題目總共存在三層關卡。
 
 ---
-### Info
+<h3 id="Info">Info</h3> 
 By using the various built-in function in the `Wireshark` or `Tshark`, we can easily identify which kinds of datas are what we want. 
 
 For example, `Wireshark filter` can help us to difference different packets of **protocols**, and it's helpful for these "fairly organized" packet flow challenge; also, `Conversations` function in the Wireshark is a useful tool whether to **solve the CTF challenge** or **detect the malicious network traffic in server rooms scenario.**
@@ -133,7 +135,7 @@ If you want to know more about
 I had recorded some `Wireshark` entry video for training *Network Manager & CTF player*, welcome to check it: 
 ## - [Wireshark 教學 - 封包分析實作 | 系統管理培訓](https://youtu.be/Bhs173xh4fk)
 
-### Solution
+<h3 id="Solution2">Solution</h3> 
 There're many ways to solve my second challenge, I will choose two way to explain it.
 
 **Slow Method (newbie)**
@@ -265,7 +267,7 @@ It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
 
 ---
 
-## Entry Forensics
+<h2 id="Entry">Entry Forensics</h2>
 `Disk forensics`,`MEM forensics`
 > In Disk Forensics challenges, participants are typically presented with a disk image or a collection of files, which they must examine and extract relevant information from. Revolving around investigating and analyzing data stored on computer hard drives or other storage devices to uncover valuable information, such as evidence of malicious activity, data breaches, or unauthorized access. 
 >
@@ -282,7 +284,7 @@ Hint1: 用工具或指令對 .mem dump 出 FLAG 資料夾的位置
 Hint2: FLAG 為 .png 檔案
 
 ---
-### Solution 
+<h3 id="Solution3">Solution</h3>
 `(Many ways / hints)`
 1. Use `FTK Imager`, `Autopsy` or `other Forensics tool` to open it, we don't introduce and teach the funtions of these tools step by step here, there're a lot of tutorials on the internet.
 (p.s. walkthrough **lots of disk forensics/mem forensics** will be helpful for utilizing these tools)
