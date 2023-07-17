@@ -22,6 +22,7 @@
 ---
 
 <h2 id="Deepeye">Deepeye</h2>
+
 `Format stego`,`Image stego` 
 > I am not the script kiddle... But I'll be the master of psychic!
 > 
@@ -35,6 +36,7 @@ Hint1: 網路有現成工具可解題，請仔細聽  .wav 音頻，裡面有非
 
 ---
 <h3 id="Solution1">Solution</h3> 
+
 In the `Deep.wav`file, It had mentioned three computer tools or tricks repeatedly. Two of them, `Deepsound` and `Magiceye` (one way to steghide the image(Stereogram)), are the tools we need to solve for this challenge.
 > ex:
 > 
@@ -97,6 +99,7 @@ Addtionally, `Binwalk`/ `Hexeditor` can also find the real Filename Extension or
 ---
 
 <h2 id="Manatsunoyoru">Manatsunoyoru no Attack</h2> 
+
 `Forensics`,`Pcap analysis`
 > 屈原既放，遊於江潭，行吟澤畔，顏色憔悴，形容枯槁。見一鯊，欲用線逮之，疑是身心俱疲，有黑色高級車，不幸追之。其一曰三浦，庇年幼者，俱攬其責。高級車主，暴力團員谷岡也，見此提要求數條，乃為……
 > 
@@ -113,6 +116,7 @@ Hint: Pcap 檔包含文字對話與混淆的亂碼，請活用 Wireshark  Filter
 
 ---
 <h3 id="Info">Info</h3> 
+
 By using the various built-in function in the `Wireshark` or `Tshark`, we can easily identify which kinds of datas are what we want. 
 
 For example, `Wireshark filter` can help us to difference different packets of **protocols**, and it's helpful for these "fairly organized" packet flow challenge; also, `Conversations` function in the Wireshark is a useful tool whether to **solve the CTF challenge** or **detect the malicious network traffic in server rooms scenario.**
@@ -268,6 +272,7 @@ It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
 ---
 
 <h2 id="Entry">Entry Forensics</h2>
+
 `Disk forensics`,`MEM forensics`
 > In Disk Forensics challenges, participants are typically presented with a disk image or a collection of files, which they must examine and extract relevant information from. Revolving around investigating and analyzing data stored on computer hard drives or other storage devices to uncover valuable information, such as evidence of malicious activity, data breaches, or unauthorized access. 
 >
@@ -285,6 +290,7 @@ Hint2: FLAG 為 .png 檔案
 
 ---
 <h3 id="Solution3">Solution</h3>
+
 `(Many ways / hints)`
 1. Use `FTK Imager`, `Autopsy` or `other Forensics tool` to open it, we don't introduce and teach the funtions of these tools step by step here, there're a lot of tutorials on the internet.
 (p.s. walkthrough **lots of disk forensics/mem forensics** will be helpful for utilizing these tools)
