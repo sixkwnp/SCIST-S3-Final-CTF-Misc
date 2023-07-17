@@ -1,14 +1,14 @@
 ## Contents:
-- [Challenge](#Challenge)
+- [Challenge](#challenge)
     - [HackMD Misc Official Writeup](https://hackmd.io/@sixkwnp/ryxZqDZK3)
-- [Deepeye - Misc 1](#Deepeye)
-    - [Solution](#Solution1)
-- [Manatsunoyoru no Attack - Misc 2](#Manatsunoyoru)
-    - [Info](#Info)
+- [Deepeye - Misc 1](#deepeye)
+    - [Solution](#solution1)
+- [Manatsunoyoru no Attack - Misc 2](#manatsunoyoru)
+    - [Info](#info)
     - [Wireshark 教學 - 封包分析實作 | 系統管理培訓](https://youtu.be/Bhs173xh4fk)
-    - [Solution](#Solution2)
-- [Entry Forensics - Misc 3](#Entry)
-    - [Solution](#Solution3)
+    - [Solution](#solution2)
+- [Entry Forensics - Misc 3](#entry)
+    - [Solution](#solution3)
 
 ---
 
