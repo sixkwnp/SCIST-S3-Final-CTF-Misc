@@ -2,7 +2,7 @@
 `Disk forensics`,`MEM forensics`
 
 **[Challenge Misc3 Download 
-link](https://drive.google.com/uc?export=download&id=1etVdBMQ9E8BT-wclZoRzEVsdN1eRpp1j)**
+link](https://drive.google.com/uc?export=download&id=1etVdBMQ9E8BT-wclZoRzEVsdN1eRpp1j)** (around 12GB)
 > In Disk Forensics challenges, participants are typically presented with 
 a disk image or a collection of files, which they must examine and extract 
 relevant information from. Revolving around investigating and analyzing 
