@@ -501,7 +501,7 @@ python3 vol.py -f SCIST.fixed.mem windows.pstree   # List the Running Processes 
 ---
 ...
 ```
-Just use `volatility2` or other tools to find **Powershell/CMD history**, we can easily find the hacker try below in the terminal.
+Just use `volatility2` or other tools to find **Powershell/CMD history**, we can easily find the hacker had tried below in the terminal.
 ```bash=
 cd 'C:\Users\sixkwnp\Appdata\Local\Temp\'
 mkdir 'Who is zal0 CASESENSITIVE'
