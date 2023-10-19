@@ -40,25 +40,24 @@ Hint1: 網路有現成工具可解題，請仔細聽  .wav 音頻，裡面有非
 In the `Deep.wav`file, It had mentioned three computer tools or tricks repeatedly. Two of them, `Deepsound` and `Magiceye` (one way to steghide the image(Stereogram)), are the tools we need to solve for this challenge.
 > ex:
 > 
-> ![](https://hackmd.io/_uploads/ByaazWPYn.png)
+> ![upload_cae57f0b35c351b3b1e3b0ef3e79e9a8](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/1a578435-bc0f-4316-afab-417681f5b9f9)
 > 
 >  
 1. Deepsound (.wav steghide a **PDF file**) ->
 2. Password is `SCIST` which is everywhere in the first line of .wav sound. 
 Then we send `Deep.wav` to Deepsound and get a PDF file. ->
->![](https://hackmd.io/_uploads/H1Jy_evY3.png)
+> ![upload_4d078310b23d9ac0d699790f07fc5697](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/aff226c8-388f-48a5-8aeb-c50272206a33)
 >
-> ![](https://hackmd.io/_uploads/HyuEulDt3.png)
+> ![upload_2a5c8b5df7504334c883784a7318d4dd](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/f543081c-3366-4ae2-86ff-be7f1d64dd0d)
 >
 > 
 3. And we will be notified that `First.pdf` is damaged.
-> ![](https://hackmd.io/_uploads/Hyp1txDYh.png)
+> ![upload_5f699a853d55869ab7a516468c2d9a3f](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/2257c912-3afb-42d0-8ffe-77fd8846636f)
 > 
 >  
 4. The correct path is to check whether this file is damaged or not.
 If it isn't broken, we have to find ways to open it. (There're also PDF repair challenges in Misc sometimes though) ->
-
-> ![](https://hackmd.io/_uploads/ByiAQ6PYn.png)
+> ![upload_8d6cac6cde9c50db9b14496a722e9187](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/832d210a-5f69-4356-a9c2-b0232fb5a460)
 > 
 > 
 5. After we tried to use `hexdump` to check PDF whether broken or not, we'll see the first line.
@@ -71,19 +70,19 @@ Addtionally, `Binwalk`/ `Hexeditor` can also find the real Filename Extension or
 
 > `binwalk`ex:
 > 
-> ![](https://hackmd.io/_uploads/SyiHw4_Yn.png)
+> ![upload_7e3e5a5a64f74baedbc76a852211f92f](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/d473e77a-df1a-4754-96f6-9e466407da2c)
 > 
 > (p.s: there's a possibility that we should change header to `25 50 44 46 2D` (.pdf header) and tail of the file, but this challenge kinda few 'cause it's somewhat uncertain & need to guess)
 7.  Got `Final_H4ck3R.jpg` image and a file called `Second`.
-> ![](https://hackmd.io/_uploads/SJISmHOth.png)
-> 
+> ![upload_a03f21836c9ce6079589de4ec84b6a51](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/683e7015-db2c-4119-ae47-42ba3e400cf1)
+
 > In`Second`file:
 >
-> ![](https://hackmd.io/_uploads/B1ObESuK2.png)
+> ![upload_468e92f3e72ca2d23037949d0d1f2d66](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/c287fb2e-5ad1-4be1-af1b-253e825b612f)
 > 
 > `Final_H4ck3R.jpg`:
 > 
-> ![](https://hackmd.io/_uploads/B17GHSdt3.png) 
+> ![upload_93e1716b4d5ad777016f453dc587c677](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/d99b4e21-dfe0-4100-b160-a7796be2bfeb)
 > 
 > 
 8. In the audio of `Deep.wav` (mentioned `Magiceye`) and `Second` (mentioned `Magic!`) hinted twice about `Magiceye` this trick.
@@ -92,7 +91,7 @@ Addtionally, `Binwalk`/ `Hexeditor` can also find the real Filename Extension or
     - [Magiceye(Autostereogram) Solver](https://piellardj.github.io/stereogram-solver/)
     - [Magiceye(Autostereogram) Alternative Solver](https://magiceye.ecksdee.co.uk/)
         - Solved:    
-        - ![](https://hackmd.io/_uploads/Sy3rPr_th.png)
+        - ![upload_374fcdc76b80e72353011d386287c17d](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/0fc4faf1-a4a9-4575-bed2-8f693852669b)
 
 ### - **Final FLAG : SCIST{YoU_4r3_K1N6_oF_T31eP47HY_XD}**
 
@@ -103,7 +102,7 @@ Addtionally, `Binwalk`/ `Hexeditor` can also find the real Filename Extension or
 `Forensics`,`Pcap analysis`
 > 屈原既放，遊於江潭，行吟澤畔，顏色憔悴，形容枯槁。見一鯊，欲用線逮之，疑是身心俱疲，有黑色高級車，不幸追之。其一曰三浦，庇年幼者，俱攬其責。高級車主，暴力團員谷岡也，見此提要求數條，乃為……
 > 
-> ![](https://hackmd.io/_uploads/H1v0_BrFn.png)
+> ![upload_403456274e941d23898f2368133fdece](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/3bbcbb5c-6570-4fcc-8e29-c9e376a52ffd)
 > 
 > FLAG Format: `SCIST{.*}`
 > 
@@ -122,11 +121,11 @@ By using the various built-in function in the `Wireshark` or `Tshark`, we can ea
 For example, `Wireshark filter` can help us to difference different packets of **protocols**, and it's helpful for these "fairly organized" packet flow challenge; also, `Conversations` function in the Wireshark is a useful tool whether to **solve the CTF challenge** or **detect the malicious network traffic in server rooms scenario.**
 
 ex:
-> ![](https://hackmd.io/_uploads/B1q5zdFK3.png)
+> ![](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/3c3ec311-5774-4a59-9b72-1e852bab17e0)
 > 
 ---
 > Location of `Conversations` function:
->![](https://hackmd.io/_uploads/ByUF1uFth.png)
+> ![](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/2b4f3dae-8437-4242-96ce-fc7338940072)
 >
 > 
 ---
@@ -150,18 +149,18 @@ There're many ways to solve my second challenge, I will choose two way to explai
     
     (P.S.) Maybe you would notice I put MORE THAN THOUSANDS packet to interrupt anyone to find the FLAG using `string -a` ;)
     >Like this:
-    > ![](https://hackmd.io/_uploads/ryJ6DutK3.png)
+    > ![](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/1c54f145-dec3-4e81-aca7-bdf1a3a58053)
     >
     > Or like this:
-    > ![](https://hackmd.io/_uploads/BJONdOKtn.png)
+    > ![](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/d606079f-8ce0-4f9e-8a33-46d47eebd22f)
     >
     > Even like this:
-    > ![](https://hackmd.io/_uploads/SyHaktYF3.png)
+    > ![upload_d7b5b59acd8abaf4be94d6a24c489bbc](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/dad7e21b-c57b-4bbb-bf2b-4e85d3d10eef)
     >
     > 
 
     Eastern Egg XD:
-    > ![](https://hackmd.io/_uploads/SkpPlttF2.png)
+    > ![upload_e3f154aa461e91406e282ce0ad7d7133](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/cdcc8627-eba5-445f-afaf-ba4932f6d4cc)
     > 
     > 
 
@@ -169,15 +168,15 @@ There're many ways to solve my second challenge, I will choose two way to explai
 But firstly let us check packet under **FLAG????** and **SCIST{** :
 
     There's a hint:
-    > ![](https://hackmd.io/_uploads/SJcs-YKFn.png)
+    > ![upload_3856d0adc42771a2b4f23867abad9b41](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/1516c5fd-d4f4-470d-bf21-44402055df79)
     > 
     > 
-    > ![](https://hackmd.io/_uploads/ryYKM5tt3.png)
+    > ![upload_060e233ddd515ab5e62c8b7927ef462b](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/50a84cc5-ca00-48f6-83c2-89c7d5d95b08)
 3. After that or using **`tcp`** filter, we'll easily see some malicious conversation.
 It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
 
     Here's some image, you can watch detailed story in `Black_Luxury_Car.pcap`:
-    > ![](https://hackmd.io/_uploads/HyIZQKKYh.png)
+    > ![upload_59b5a2f85d4e5bf8d5aa3d1b9c5b1783](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/d7e658cd-207d-4de8-b809-9e93f134e61e)
     > 
     > 
     
@@ -187,32 +186,32 @@ It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
     (這裡需要道個歉，IP 沒有設定好，在故事部分會一直 Decrease，開賽時沒發現到這點沒修改到，因此以**第一個發送的封包**為準，但大部分還是可以從這判斷，從 **`Conversations`** 較為明顯) 
     > **封包發送數量明顯較多**:
     >
-    > ![](https://hackmd.io/_uploads/BkZgDKtKn.png)
+    > ![upload_aa00b7cde4d58da0b4d29052348fc05f](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/fb20b0d9-bb8e-4fa8-b48c-59a401d1c222)
     > 
     > 
 
 5. Two packets including all data of PDF **below**; also, if you discover this thing, you will know you should find the **key**.
     > SeNPai smiled and said: "OK, then. The first thing you need to do is to know this **PDF**..But **where's the key**??
     > 
-    > ![](https://hackmd.io/_uploads/SJinSFFKh.png)
+    > ![upload_cc5077441412770cf4312011b6a914aa](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/f81e1b86-49d8-4d3e-b21d-1e838e508785)
     > 
     ---
     Following packets - 
     > ### PDF:
-    > ![](https://hackmd.io/_uploads/S1uXtKtt3.png)
+    > ![upload_53bbad0f896f7a3b8d55f50b98633c74](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/bb1c0cde-9e4f-455a-8492-8b8c69944d54)
     >
-    > ![](https://hackmd.io/_uploads/H1q02tKFn.png)
+    > ![upload_0bc3a35f281f55b6ac7c7df14dd70251](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/67050e93-258b-45d8-8b90-fede295c704b)
     > 
     ---
     > ### Null packet:
-    > ![](https://hackmd.io/_uploads/HyJcFYKY3.png)
+    > ![upload_9e6db6a9a1bc86eb20a0a88d9d5387bf](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/ff6c81b3-7519-4479-992c-57a5d4fc0e41)
     > 
-    > ![](https://hackmd.io/_uploads/rk4jYtKF2.png)
+    > ![upload_ef067092421b3fdece7e3ec7d4f8e2e0](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/dbd51246-5f55-4ef6-ba43-7b0bb8f5ecd0)
     > 
     ---
     > ### **Hint:**
     > `Plz combine the HEX of PDF`
-    > ![](https://hackmd.io/_uploads/SkRpKtYKh.png)
+    > ![upload_9091c5a803d96662fa54188ef637b030](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/80f45422-833d-4e54-9484-4cd8498d947f)
     > 
     > 
     ---
@@ -223,17 +222,18 @@ It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
 
     **So we should export the selected part:**
       
-      -  > ![](https://hackmd.io/_uploads/HyQNqtYFh.png)
+      -  > ![upload_edfbab28c93894d6aa6238bd1d11bfe2](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/da53c5ed-4639-46dc-8b84-cd9df7e87fc7)
+         
 6. Exporting object
 
     (1) Method one
-    > ![](https://hackmd.io/_uploads/rkOkCFtF3.png)
+    > ![upload_d2b03178a8b48233ae2032ffa14e7103](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/980bc636-cab0-4142-9ece-1a19020c0e99)
 
     (2) Method two
-    > ![](https://hackmd.io/_uploads/BJOYAKKKn.png)
+    > ![upload_ec144ac2c57c4b6d81b683d0acea0955](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/215a2c63-a00b-4a47-a8bc-a06c87ee6af2)
 
     (3) Method three
-    > ![](https://hackmd.io/_uploads/SyL1WcFYn.png)
+    > ![upload_38b48e497609eb132991cdc2ba3a6777](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/b6d39e1f-5371-482a-97fa-30782fbe8c63)
 
         Method(2) you will need to delete space using like this one http://www.esjson.com/delSpace.html  
 7. 
@@ -241,31 +241,31 @@ It's about a hacker called ''Senpai'' attacking the computer of ''MiURa''.
     > 
     > (after `45 4f 46 0a`)
     > 
-    > ![](https://hackmd.io/_uploads/HJDlg9Kth.png)
+    > ![upload_3a9ff720c206fa8622f9b059f7a7ac85](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/b96bab37-3c11-47d1-935f-eb9de2d169de)
 8. Hex to file (or use 010editor, Notepad++, HxD...):
-    > ![](https://hackmd.io/_uploads/SJf5ZqFK3.png)
+    > ![upload_d3592080a26016d8a2e52be31182f4bd](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/eb4d46d2-bc5d-4650-926e-5c39adc0da2c)
 9. It's encrypted:
-    > ![](https://hackmd.io/_uploads/BJ27zcKt2.png)
+    > ![upload_1689b27c0d7360a114c9ed978b2fc738](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/47d4e652-daad-4451-acb3-7a2dff0bfcc6)
 10. Tring to use `Seipai` and `MiRUa`'s IPs to find the `key of PDF`.
-    > ![](https://hackmd.io/_uploads/SJDem9tK3.png)
+    > ![upload_8b02d10e94257edee9911f75b8525be1](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/9cc5269e-7975-4c31-a042-53f5b2d3a825)
     > 
     > BOOM!!! The last conversation packet of them stored 
 32 characters key **`2a9d119df47ff993b662a8ef36f9ea20`** has found by you!
 
 11. To prevent the **Key** leaked by the `string -a`, I used Base64 to encode it. 
 (Maybe use cipher identifier to decode?)
-    > ![](https://hackmd.io/_uploads/ryWN49YK3.png)
+    > ![upload_95e664c9fae651065af1aae3b19618d4](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/38e3bf99-68ba-49fc-9fae-8f31c081dabd)
     > 
 12. Decoding Result:
-    > ![](https://hackmd.io/_uploads/ryc4gdZ5n.png)
+    > ![](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/9f3886f6-4079-4c05-a8c5-277b2d0e89fc)
     > 
 
 **Fast Method**
 1. Just use **`Conversation`**, you would not only find the `story`, also quicker to see the `key` in the last packet.
 (ip.addr of Encrypted PDF is `0.0.0.0`, but still, easier to find when you saw `Packet Sequence Number`) 
 
-    > ![](https://hackmd.io/_uploads/rk-Mw5FYn.png)
-     > 
+    > ![upload_f1c73d1a041364a63454184a40b4845e](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/fad47ad8-dfa2-4e21-8bb4-b6881e6ddae2)
+    > 
 
 ### - **Final FLAG : SCIST{pc4p_4n4lyS15_1snT_h4rd_W17H_Bl4CK_LUXURY_C4R}**
 
@@ -297,21 +297,22 @@ Hint2: FLAG 為 .png 檔案
 
         [root] means the system disk. ex: C:\ in the windows system
 > This a **Windows image**, just see the name of dir.
-> ![](https://hackmd.io/_uploads/SkuKxsFt3.png)
+> ![upload_5884992e376b9d781968ad9b73f21605](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/4ac4d046-6a74-4d61-920d-ab823c28a2f8)
 > 
 2. 
->![](https://hackmd.io/_uploads/SyBaMiKKn.png)
+> ![upload_37d4b118364d07d54daad36f43fe8a97](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/c8d7e011-2c22-4c4d-9764-703e6bd6ebc4)
 > 
 3. Fail to generate Malicious_Image.ad1... -> **.txt is the log**
 You can think that the company tried to generate this disk image for DFIR, but the process was broken by hacker's intrusion.
-> ![](https://hackmd.io/_uploads/H19HSjYFn.png)
+> !![upload_b6266c384069287eeeedc05eb5022e35](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/46be9d9d-8537-4eb5-b88c-543d8b249012)
 > 
 
     Hints
     - C:\Users\sixkwnp\Documents
     - C:\Users\sixkwnp\Contacts
     - C:\Users\sixkwnp\Videos
-- > ![](https://hackmd.io/_uploads/HyN44oKY3.png) 
+- > ![upload_510933380205500e623cb8b64e8f2a50](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/6fabf9f7-d35a-4887-98f9-b61799e8034a)
+
 
 4. It gave you a file called `SCIST.Entry.forensics.txt` (find detail below), and `SCIST_address` hint the address of **.MEM forensics file**:
     ```
@@ -319,7 +320,7 @@ You can think that the company tried to generate this disk image for DFIR, but t
     ```
     
 **C:\Users\sixkwnp\Documents:**
-> ![](https://hackmd.io/_uploads/HkfCSVbc2.png)
+![upload_3c419f098fb224d0c3641296ccccb659](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/a9668ee3-78fa-4793-b12c-f5ea403646ae)
 
 > **Memory Forensics**
 >
@@ -353,12 +354,12 @@ You can think that the company tried to generate this disk image for DFIR, but t
 > 
 > > - SCIST.Entry.forensics.txt
 
-> ![](https://hackmd.io/_uploads/By4B34b52.png)
+> ![upload_c7bdda3e79e1b74fe70eff8fa15e8ba1](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/2be7cf6c-8f96-43a9-8bad-00ff6b51f64f)
 > 
 > > - SCIST_address
 
 > There's also a hint
-> ![](https://hackmd.io/_uploads/rkkY5NZ9n.png)
+> ![upload_6f74d6604ef609c67705e571d0b249a4](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/f11b731e-164a-492f-a070-a0ae4be35d51)
 >
 > > - [root] -> C:\
 5. As you follow the hint, you should use your Mem Forensics skills/tools to solve **.MEM file** hidden challenge; but first, let us find hints / stories in Directory that mentioned in `Malicious_Image.ad1.txt`:
@@ -369,7 +370,7 @@ You can think that the company tried to generate this disk image for DFIR, but t
 - First story that later will use in solving final challenge
 
 **C:\Users\sixkwnp\Videos:**
-> ![](https://hackmd.io/_uploads/BJ6i8Sbc2.png)
+> ![upload_f3002fa1e3c3facafbea798688d4c9db](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/47c338af-4524-4e0d-9915-aa8397e6040d)
 
 > [17:35] <phy114c1<3r>:
 > --
@@ -420,19 +421,20 @@ C:\Users\sixkwnp\Contacts
 ```
 > C:\Users\sixkwnp\Contacts:
 > 
-> ![](https://hackmd.io/_uploads/SyFAyrb92.png)
+> ![upload_e6904e10460cc8a583b2718b6a83ff4b](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/3e4031c4-484d-4e06-ad01-074c074161e1)
 > 
 ---
 - **Hint twice about the location of .MEM file challenge** below
 > C:\Users\sixkwnp\Contacts\Company Confidential:
 > 
-> ![](https://hackmd.io/_uploads/rkTvWSWqh.png)
+> ![upload_7053ba3289dfcc9f04506504146b712c](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/ad1ec946-a69d-4d23-a1b1-bd3c7879561d)
 > 
 ---
 - Second story that later will use in solving final challenge
     
 **C:\Users\sixkwnp\Contacts\Andrew:**
-> ![](https://hackmd.io/_uploads/rJ0emSZch.png)
+> ![upload_da6625ba65d3dc284764a8b55bcb7961](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/d4f1184f-abd0-403f-a6de-549e9897b4c9)
+
 
 > **\<Zoe> 2023-07-06 16:46:00**
 > --
@@ -463,7 +465,7 @@ C:\Users\sixkwnp\Contacts
 - **Hint third about .MEM challenge and some tools + challenges**
 
 **C:\Users\sixkwnp\Contacts\Zoe || C:\Users\sixkwnp\Contacts\Zephyr:**
-> ![](https://hackmd.io/_uploads/SJxUUSWqn.png)
+> ![upload_3a85a555b353dbefd7476142a7c19d0a](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/23cb52b7-fb1a-4eaf-8f70-2a91568fb6a8)
 
 > **Browsing History**
 > 
@@ -477,8 +479,8 @@ C:\Users\sixkwnp\Contacts
 > > - Zoe\1.txt && Zephyr\1.txt
 7. And then we can go to **`C:\Windows\SysWOW64\Recovery\Company\SCIST.fixed.mem`** to solve Mem Forensics chanllenge.
 - Use build-in funtion (FTK imager, Autopsy, other tools...) to **Export the .MEM file**
->![](https://hackmd.io/_uploads/SJXScHbq3.png)
-    - ![](https://hackmd.io/_uploads/rkdue_bch.png)
+> ![upload_0b18795407a4a9f445a3737684ebeb69](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/fb46721c-c48e-4dbd-ac9b-14e9b3d35b41)
+    - ![](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/9afa88a3-d1c6-4184-912e-c098534a5427)
 8. Use `Volatility2`(Recommended -> more funtions for WIN), `Volatility3`, `strings -a | grep <keyword in stories>`,... to find where's the flag.
 
 > ### For instance:
@@ -519,33 +521,33 @@ C:\Users\sixkwnp\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\Console
 9. Then we just go to `C:\Users\sixkwnp\Appdata\Local\Temp\`using Disk forensics tool
 > Export this `Who is zal0 CASESENSITIVE.7z` file
 >
-> ![](https://hackmd.io/_uploads/rJREcDW92.png)
+> ![upload_0397d79ec10ada2d45057e30897bb0f0](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/90e5f786-5f0d-4a97-a190-b902a3503deb)
 > 
 > > - C:\Users\sixkwnp\Appdata\Local\Temp
 10. If you take a glance at two stories and `C:\Users\sixkwnp\Contacts`,
 easily can understand who is `zal0`, `phy114ck3r` and `CEO`, respectively.
 ---
-> ![](https://hackmd.io/_uploads/BJO-sDZq2.png)
+> ![upload_0c7e1ce0744d5054d5115482ae4a78fb](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/1e854f1b-5b78-42b8-9b9d-6afde55f361b)
 > 
 > - **key: Zoe (Case sensitive)**
 > 
 > > - Who is zal0 CASESENSITIVE.7z
 ---
-> ![](https://hackmd.io/_uploads/Bk-i2vbc3.png)
+> ![upload_ae7cbb4467f4cb26732ea6b16ae152fb](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/63b9e991-d14f-4c38-b678-ba4d529fd45c)
 > 
 > - **key: Andrew (Case sensitive)**
 > 
 > > - Who is phy114ck3r.7z
 ---
-> ![](https://hackmd.io/_uploads/SkVm6Pbq2.png)
+> ![upload_08018ee34a18c1db1e1e1f4cf109d66f](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/cc20febd-1ef4-42a8-ac12-9f3452e84c1c)
 > 
 > - **key: Mattias (Case sensitive)**
 > 
 > > - Who is CEO.7z
 11. Successfully dump the flag!
     
-![](https://hackmd.io/_uploads/S10sg_Z5n.png)
-- > ![](https://hackmd.io/_uploads/BkgGCPW9h.png)
-- > > - 112f3a99b283a4e1788dedd8e0e5d35375c33747.png
+![](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/06447641-4c0f-431c-aef6-9112fd8f2dc5)
+- > ![upload_21520a484f556fb87738faf8891b562d](https://github.com/sixkwnp/SCIST-S3-Final-CTF-Misc/assets/67849251/b46f01b1-ede9-4188-9514-86b35114616a)
+- > > 112f3a99b283a4e1788dedd8e0e5d35375c33747.png
 ### - **Final FLAG : SCIST{Vol4T1L17Y_C4N_do_4LL_Non53nse_M3MFoR3Ns1cs}**
 
