@@ -24,7 +24,7 @@
 <h2 id="Deepeye">Deepeye</h2>
 
 `Format stego`,`Image stego` 
-> I am not the script kiddle... But I'll be the master of psychic!
+> I am not the script kiddie... But I'll be the master of psychic!
 > 
 > FLAG Format: `SCIST{.*}`
 > > - Author: sixkwnp
